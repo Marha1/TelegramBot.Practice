@@ -9,7 +9,7 @@ namespace Infrastructure.Dal.Interfaces
     {
         void Add (T entity);
         void Update (T entity);
-        void Delete (Guid id);
+        bool Delete (Guid id);
         IEnumerable<T> GetAll();
     }
 }

@@ -34,10 +34,10 @@ namespace Application.Services.Implementations
             }
         }
 
-        public void Delete(Guid id)
+        public bool Delete(Guid id)
         {
-            _employeerepository.Delete(id);
-               
+            var request=_employeerepository.Delete(id);
+            return request;
         }
 
         public IEnumerable<Employee> GetEmploye()

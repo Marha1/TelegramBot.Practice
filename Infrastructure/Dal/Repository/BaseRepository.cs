@@ -37,14 +37,16 @@ public abstract class BaseRepository<T>:IBaseRepository<T> where T : class
     /// Удаление по id 
     /// </summary>
     /// <param name="id"></param>
-    public void Delete(Guid id)
+    public bool Delete(Guid id)
     {
         var entity= _context.Set<T>().Find(id);
-        if (entity!=null)
+        if (entity==null)
         {
-            _context.Set<T>().Remove(entity);
+            return false;
         }
+        _context.Set<T>().Remove(entity);
         _context.SaveChanges();
+        return false;
     }
     public IEnumerable<T> GetAll()
     {
