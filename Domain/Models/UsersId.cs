@@ -1,15 +1,36 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using Domain.Validations;
+using ValidationException = FluentValidation.ValidationException;
+using ValidationResult = FluentValidation.Results.ValidationResult;
+
 
 namespace Domain.Models
 {
-    public class UsersId
+    public class UsersId:BaseEntity
     {
-        [Key]
-        public Guid Id { get; set; }
+        public UsersId()
+        {
+            
+        }
+        public UsersId(string name)
+        {
+            
+            var validationResult = Validate();
+            if (!validationResult.IsValid)
+            {
+                string errorMessages = string.Join("\n", validationResult.Errors);
+                throw new ValidationException(errorMessages);
+            }
+            Name= name;
+            
+        }
+        public ValidationResult Validate()
+        {
+            var validator = new UserIdValidation();
+            return validator.Validate(this);
+        }
         [Required]
         public long ChatID { get; set; }
-        public string?Name { get; set; }
-        
     }
 }
 
