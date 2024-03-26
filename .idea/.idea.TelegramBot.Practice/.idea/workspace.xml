@@ -11,20 +11,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ff6eea0-41c3-4ee7-af7c-f88ea714862e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/config/applicationhost.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.vs/TelegramBot.Practice/FileContentIndex/0f7b71be-db5b-414d-9265-ea64c002c917.vsidx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/Application.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/Application.http" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/Domain.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Infrastructure/Arfitacts/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Infrastructure/Infrastructure.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Infrastructure/TelegramBotHelper.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TelegramBot.Practice.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TelegramBot.Practice/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TelegramBot.Practice/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/Migrations/20240322001817_CamelCase.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/Migrations/20240322001817_CamelCase.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/Migrations/20240326093215_CamelCase.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/Migrations/20240326093215_CamelCase.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/Migrations/AplicationContextModelSnapshot.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/TelegramBotHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/TelegramBotHelper.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,8 +28,16 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/aspnetcore/88ec3bc3f37e76fbcc932a25f9f0c1c29fe2b343/src/DefaultBuilder/src/WebApplication.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/aspnetcore/3f1acb59718cadf111a0a796681e3d3509bb3381/src/DefaultBuilder/src/WebApplicationBuilder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/5535e31a712343a63f5d7d796cd874e563e5ac14/src/libraries/System.Private.CoreLib/src/System/Threading/ExecutionContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/5535e31a712343a63f5d7d796cd874e563e5ac14/src/libraries/System.Private.CoreLib/src/System/Threading/Tasks/Future.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/5535e31a712343a63f5d7d796cd874e563e5ac14/src/libraries/System.Private.CoreLib/src/System/Threading/Tasks/Task.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/5535e31a712343a63f5d7d796cd874e563e5ac14/src/libraries/System.Private.CoreLib/src/System/Threading/ThreadPoolWorkQueue.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1b1d51979d9ebbb4eb6bcc7b07a038d0b49864690463ecabdb498a3dd9035/QuartzSchedulerThread.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/4f932bc79ad413c5ace14aad875c6bcfdf20a74e6076d526ec3c8684bd26163/TelegramBotClient.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8f3cd882bb032a35cddbb797b718b64e27ada7b7682b9e24e4743ea691456b/StdScheduler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/dbc56e39c182bedb56e74fd54fccecb7d3b874cd216bdb9d13fec7f616e94641/QuartzScheduler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ed6f0c3113fe62e22206f653317c51ef58fe65597e7889b719e1c32a4ce3aa/JobRunShell.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
@@ -53,33 +54,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.Application: IIS Express.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Launch Settings Profile.Application: WebApplication12.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Launch Settings Profile.Application: http.executor&quot;: &quot;Run&quot;,
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;RiderNuGetOptionsPageId&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.Application: IIS Express.executor": "Run",
+    ".NET Launch Settings Profile.Application: WebApplication12.executor": "Run",
+    ".NET Launch Settings Profile.Application: http.executor": "Run",
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "deletionFromPopupRequiresConfirmation": "false",
+    "git-widget-placeholder": "develop",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "RiderNuGetOptionsPageId",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\timyr\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\timyr\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\timyr\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\Hi-Tech\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
+      "C:\\Users\\Hi-Tech\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
+      "C:\\Users\\Hi-Tech\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.Application: http">
     <configuration name="Application: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/выфвфыфвы/выфвфыфвы.csproj" />
@@ -162,6 +163,7 @@
       <workItem from="1711062429438" duration="83000" />
       <workItem from="1711063163231" duration="129000" />
       <workItem from="1711063590886" duration="4567000" />
+      <workItem from="1711450403241" duration="796000" />
     </task>
     <servers />
   </component>
@@ -172,6 +174,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -179,54 +182,143 @@
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Infrastructure/TelegramBotHelper.cs</url>
           <line>55</line>
-          <properties documentPath="C:\Users\timyr\RiderProjects\TelegramBot.Practice\Infrastructure\TelegramBotHelper.cs" initialLine="55" containingFunctionPresentation="Method 'GetUpdates'">
-            <startOffsets>
-              <option value="1878" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1923" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\timyr\RiderProjects\TelegramBot.Practice\Infrastructure\TelegramBotHelper.cs" initialLine="55" containingFunctionPresentation="Method 'GetUpdates'" />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Infrastructure/TelegramBotHelper.cs</url>
           <line>56</line>
-          <properties documentPath="C:\Users\timyr\RiderProjects\TelegramBot.Practice\Infrastructure\TelegramBotHelper.cs" initialLine="56" containingFunctionPresentation="Method 'GetUpdates'">
-            <startOffsets>
-              <option value="1948" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2034" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\timyr\RiderProjects\TelegramBot.Practice\Infrastructure\TelegramBotHelper.cs" initialLine="56" containingFunctionPresentation="Method 'GetUpdates'" />
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Infrastructure/TelegramBotHelper.cs</url>
           <line>57</line>
-          <properties documentPath="C:\Users\timyr\RiderProjects\TelegramBot.Practice\Infrastructure\TelegramBotHelper.cs" initialLine="57" containingFunctionPresentation="Method 'GetUpdates'">
-            <startOffsets>
-              <option value="2055" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2142" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\timyr\RiderProjects\TelegramBot.Practice\Infrastructure\TelegramBotHelper.cs" initialLine="57" containingFunctionPresentation="Method 'GetUpdates'" />
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Infrastructure/TelegramBotHelper.cs</url>
           <line>58</line>
-          <properties documentPath="C:\Users\timyr\RiderProjects\TelegramBot.Practice\Infrastructure\TelegramBotHelper.cs" initialLine="58" containingFunctionPresentation="Method 'GetUpdates'">
+          <properties documentPath="C:\Users\timyr\RiderProjects\TelegramBot.Practice\Infrastructure\TelegramBotHelper.cs" initialLine="58" containingFunctionPresentation="Method 'GetUpdates'" />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Application/Program.cs</url>
+          <line>22</line>
+          <properties documentPath="C:\Users\Hi-Tech\OneDrive\Desktop\проект\TelegramBot.Practice\Application\Program.cs" initialLine="22" containingFunctionPresentation="Method 'Main'">
             <startOffsets>
-              <option value="2163" />
+              <option value="974" />
             </startOffsets>
             <endOffsets>
-              <option value="2213" />
+              <option value="1042" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="12" />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Infrastructure/Jobs/Postcard.cs</url>
+          <line>28</line>
+          <properties documentPath="C:\Users\Hi-Tech\OneDrive\Desktop\проект\TelegramBot.Practice\Infrastructure\Jobs\Postcard.cs" initialLine="28" containingFunctionPresentation="Method 'Execute'">
+            <startOffsets>
+              <option value="916" />
+            </startOffsets>
+            <endOffsets>
+              <option value="933" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Infrastructure/Jobs/Postcard.cs</url>
+          <line>23</line>
+          <properties documentPath="C:\Users\Hi-Tech\OneDrive\Desktop\проект\TelegramBot.Practice\Infrastructure\Jobs\Postcard.cs" initialLine="23" containingFunctionPresentation="Method 'Execute'">
+            <startOffsets>
+              <option value="556" />
+            </startOffsets>
+            <endOffsets>
+              <option value="662" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Infrastructure/Jobs/Postcard.cs</url>
+          <line>24</line>
+          <properties documentPath="C:\Users\Hi-Tech\OneDrive\Desktop\проект\TelegramBot.Practice\Infrastructure\Jobs\Postcard.cs" initialLine="24" containingFunctionPresentation="Method 'Execute'">
+            <startOffsets>
+              <option value="675" />
+            </startOffsets>
+            <endOffsets>
+              <option value="757" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Infrastructure/Jobs/Postcard.cs</url>
+          <line>25</line>
+          <properties documentPath="C:\Users\Hi-Tech\OneDrive\Desktop\проект\TelegramBot.Practice\Infrastructure\Jobs\Postcard.cs" initialLine="25" containingFunctionPresentation="Method 'Execute'">
+            <startOffsets>
+              <option value="770" />
+            </startOffsets>
+            <endOffsets>
+              <option value="850" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Infrastructure/Jobs/Postcard.cs</url>
+          <line>26</line>
+          <properties documentPath="C:\Users\Hi-Tech\OneDrive\Desktop\проект\TelegramBot.Practice\Infrastructure\Jobs\Postcard.cs" initialLine="26" containingFunctionPresentation="Method 'Execute'">
+            <startOffsets>
+              <option value="863" />
+            </startOffsets>
+            <endOffsets>
+              <option value="902" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ed6f0c3113fe62e22206f653317c51ef58fe65597e7889b719e1c32a4ce3aa/JobRunShell.cs</url>
+          <line>262</line>
+          <properties documentPath="C:\Users\Hi-Tech\AppData\Roaming\JetBrains\Rider2023.3\resharper-host\SourcesCache\ed6f0c3113fe62e22206f653317c51ef58fe65597e7889b719e1c32a4ce3aa\JobRunShell.cs" initialLine="262" containingFunctionPresentation="Method 'Run'">
+            <startOffsets>
+              <option value="10893" />
+            </startOffsets>
+            <endOffsets>
+              <option value="10991" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Infrastructure/TelegramBotHelper.cs</url>
+          <line>20</line>
+          <properties documentPath="C:\Users\Hi-Tech\OneDrive\Desktop\проект\TelegramBot.Practice\Infrastructure\TelegramBotHelper.cs" initialLine="20" containingFunctionPresentation="Method 'GetUpdates'">
+            <startOffsets>
+              <option value="536" />
+            </startOffsets>
+            <endOffsets>
+              <option value="576" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Infrastructure/TelegramBotHelper.cs</url>
+          <line>21</line>
+          <properties documentPath="C:\Users\Hi-Tech\OneDrive\Desktop\проект\TelegramBot.Practice\Infrastructure\TelegramBotHelper.cs" initialLine="21" containingFunctionPresentation="Method 'GetUpdates'">
+            <startOffsets>
+              <option value="589" />
+            </startOffsets>
+            <endOffsets>
+              <option value="636" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

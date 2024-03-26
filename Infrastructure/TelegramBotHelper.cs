@@ -52,7 +52,7 @@ namespace Infrastructure
             foreach (var update in userId)
                 try
                 {
-                    var imagePath = Path.Combine(Environment.CurrentDirectory, "Infrastructure", "Arfitacts", "1.png");
+                    var imagePath = @"C:\Users\Hi-Tech\OneDrive\Desktop\проект\TelegramBot.Practice\Infrastructure\Arfitacts\1.png";
                     using (var stream = File.OpenRead(imagePath))
                         _client.SendPhotoAsync(update.ChatID, new Telegram.Bot.Types.InputFileStream(stream));
                     var text = $"С  днем рождения {_name}, Успехов радости веселия Вам исполнилось {_age}";
