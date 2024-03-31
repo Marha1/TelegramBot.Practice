@@ -25,6 +25,16 @@ namespace Domain.Models
             Post = _Post;
             
         }
+        public override bool Equals(object obj)
+        {
+            if (obj == null || !(obj is Employee))
+            {
+                return false;
+            }
+
+            Employee other = (Employee)obj;
+            return this.Id == other.Id;
+        }
         public int Age  
         {
             get => DateTime.Now.Year - DateOfBirh.Year;

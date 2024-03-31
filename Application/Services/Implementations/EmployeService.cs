@@ -46,9 +46,14 @@ namespace Application.Services.Implementations
             return employees;
         }
 
-        public void Update(Employee entity)
+        public bool Update(Employee entity)
         {
-            _employeerepository.Update(entity);
+            if (!_employeerepository.Update(entity))
+            {
+                return false;
+            }
+
+            return true;
         }
     }
 }

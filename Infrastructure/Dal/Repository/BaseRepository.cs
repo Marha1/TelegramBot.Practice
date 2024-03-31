@@ -24,15 +24,20 @@ public abstract class BaseRepository<T>:IBaseRepository<T> where T : class
     ///Обновление объекта при сравнение схожести объекта через переписанный Equals,который использует рефлексию     /// </summary>
      /// <param name="entity"></param>
 
-    public void Update(T entity)
-    {
-        var result = _context.Set<T>().FirstOrDefault(p => p.Equals(this)== entity.Equals(entity));
-        if (result is not null)
-        {
-            _context.Set<T>().Update(entity);
-            _context.SaveChanges();
-        }
-    }
+     public bool Update(T entity)
+     {
+         // Найти объект в базе данных
+         var findEntity = _context.Set<T>().FirstOrDefault(e => e.Equals(entity));
+         if (findEntity != null)
+         {
+             ///Берем значение свойств из базы и задаем ему новые значения из запроса
+             _context.Entry(findEntity).CurrentValues.SetValues(entity);
+             _context.SaveChanges();
+             return true;
+         }
+         return false;
+     }
+
     /// <summary>
     /// Удаление по id 
     /// </summary>

@@ -56,7 +56,10 @@ namespace Application.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public IActionResult Put([FromBody] Employee request)
         {
-            EmployeService.Update(request);
+            if (!EmployeService.Update(request))
+            { 
+                return NotFound();
+            }
             return Ok("Ok");
         }
     }

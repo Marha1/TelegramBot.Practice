@@ -8,7 +8,7 @@ namespace Infrastructure.Dal.Interfaces
     public interface IBaseRepository<T>
     {
         void Add (T entity);
-        void Update (T entity);
+        bool Update (T entity);
         bool Delete (Guid id);
         IEnumerable<T> GetAll();
     }
