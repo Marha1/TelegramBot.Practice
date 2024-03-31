@@ -52,7 +52,6 @@ namespace Application.Services.Implementations
             {
                 return false;
             }
-
             return true;
         }
     }

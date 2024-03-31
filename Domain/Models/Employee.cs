@@ -31,10 +31,15 @@ namespace Domain.Models
             {
                 return false;
             }
-
             Employee other = (Employee)obj;
             return this.Id == other.Id;
         }
+
+        public override int GetHashCode()
+        {
+            return Id.GetHashCode();
+        }
+
         public int Age  
         {
             get => DateTime.Now.Year - DateOfBirh.Year;
