@@ -1,43 +1,73 @@
 ﻿using Application.Services.Interfaces;
 using Domain.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
+
 namespace Application.Controllers
 {
     [Route("api/[controller]")]
     public class EmployeeController : ControllerBase
     {
         private readonly IEmployeService EmployeService;
+
         public EmployeeController(IEmployeService EmployeService)
         {
             this.EmployeService = EmployeService;
         }
 
         [HttpPost("Add")]
-        public IActionResult AddEmploy([FromBody]Employee request)
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+
+        public IActionResult AddEmploy([FromBody] Employee request)
         {
             EmployeService.Add(request);
-            return new OkResult();
+            return Ok();
         }
+
         [HttpGet("Get")]
+        [ProducesResponseType(typeof(IEnumerable<Employee>), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public IActionResult GetEmploy()
         {
             var responce = EmployeService.GetEmploye();
-            return  new ObjectResult(responce);
+            if (responce == null)
+            {
+                return NotFound();
+            }
+            return Ok(responce);
         }
+
         [HttpDelete("Delete")]
-        public IActionResult DeleteEmploy([FromBody]Employee request)
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+
+        public IActionResult DeleteEmploy([FromBody] Employee request)
         {
-            EmployeService.Delete(request.Id);
-            return new ObjectResult("Ok");
+            var deleted = EmployeService.Delete(request.Id);
+            if (!deleted)
+            {
+                return NotFound();
+            }
+            return Ok("Ok");
         }
+
         [HttpPut("Update")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+
         public IActionResult Put([FromBody] Employee request)
         {
-            EmployeService.Update(request);
-            return new ObjectResult("Ok");
-           
+            if (!EmployeService.Update(request))
+            { 
+                return NotFound();
+            }
+            return Ok("Ok");
         }
-
-
     }
 }

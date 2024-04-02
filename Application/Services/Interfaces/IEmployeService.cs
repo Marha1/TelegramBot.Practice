@@ -6,7 +6,7 @@ namespace Application.Services.Interfaces
     {
         IEnumerable<Employee> GetEmploye();
         void Add(Employee entity);
-        void Update(Employee entity);
-        void Delete(Guid id);
+        bool Update(Employee entity);
+        bool Delete(Guid id);
     }
 }

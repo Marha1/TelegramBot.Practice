@@ -18,7 +18,7 @@ namespace Infrastructure.Jobs
         public async Task Execute(IJobExecutionContext context)
         {
             // Извлекаем зависимости из JobData
-            var employeeRepository = (IBaseRepository<Employee>)context.JobDetail.JobDataMap["employeeRepository"];
+            var employeeRepository = (IEmployeRepository<Employee>)context.JobDetail.JobDataMap["employeeRepository"];
             _dbContext = (AplicationContext)context.JobDetail.JobDataMap["DefaultConnection"];
             var telegramBotToken = (string)context.JobDetail.JobDataMap["TelegramBotToken"];
             var task = employeeRepository.GetAll();
@@ -41,6 +41,7 @@ namespace Infrastructure.Jobs
                     telegram.GetName(item.Name, item.Age);
                     telegram.GetUpdates();
                     employeeRepository.Save();
+                    
                 }
             }
         }

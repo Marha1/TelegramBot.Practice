@@ -1,6 +1,10 @@
-﻿using Application.Services.Interfaces;
+﻿using System.ComponentModel.DataAnnotations;
+using Application.Services.Interfaces;
 using Domain.Models;
+using Domain.Validations;
+using FluentValidation.Results;
 using Infrastructure.Dal.Interfaces;
+using ValidationResult = FluentValidation.Results.ValidationResult;
 
 namespace Application.Services.Implementations
 {
@@ -14,14 +18,26 @@ namespace Application.Services.Implementations
 
         public void Add(Employee entity)
         {
-            _employeerepository.Add(entity);
-           
+            var validator = new EmployeeValidation();
+            ValidationResult validationResult = validator.Validate(entity);
+
+            if (validationResult.IsValid)
+            {
+                _employeerepository.Add(entity);
+            }
+            else
+            {
+                foreach (var error in validationResult.Errors)
+                {
+                    Console.WriteLine(error.ErrorMessage);
+                }
+            }
         }
 
-        public void Delete(Guid id)
+        public bool Delete(Guid id)
         {
-            _employeerepository.Delete(id);
-               
+            var request=_employeerepository.Delete(id);
+            return request;
         }
 
         public IEnumerable<Employee> GetEmploye()
@@ -30,9 +46,13 @@ namespace Application.Services.Implementations
             return employees;
         }
 
-        public void Update(Employee entity)
+        public bool Update(Employee entity)
         {
-            _employeerepository.Update(entity);
+            if (!_employeerepository.Update(entity))
+            {
+                return false;
+            }
+            return true;
         }
     }
 }
