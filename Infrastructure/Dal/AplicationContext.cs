@@ -1,4 +1,5 @@
 ﻿using Domain.Models;
+using Infrastructure.Dal.Configurations;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
@@ -22,8 +23,8 @@ namespace Infrastructure.Dal
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Employee>().HasKey(t => t.Id);
-            modelBuilder.Entity<UsersId>().HasKey(t => t.Id);
+            modelBuilder.ApplyConfiguration(new UserConfiguration());
+            modelBuilder.ApplyConfiguration(new EmployeeConfiguration());
         }
 
     }

@@ -1,7 +1,5 @@
 ﻿using Domain.Models;
 using FluentValidation;
-using System;
-
 namespace Domain.Validations
 {
     public class UserIdValidation : AbstractValidator<UsersId>
@@ -11,7 +9,7 @@ namespace Domain.Validations
             RuleFor(x => x.Name)
                 .Cascade(CascadeMode.StopOnFirstFailure)
                 .NotNull().WithMessage("Имя не должно быть пустым")
-                .Matches(@"^[a-zа-я]+$").WithMessage("Имя должно содержать только буквы");
+                .Matches(@"^[a-zа-я]+$").WithMessage(string.Format(ValidationMessages.IsNullOrEmpty,nameof(UsersId.Name)));
         }
     }
 }

@@ -10,13 +10,13 @@ namespace Domain.Validations
         {
             RuleFor(x => x.Name)
                 .Cascade(CascadeMode.StopOnFirstFailure)
-                .NotNull().WithMessage("Имя не должно быть пустым")
-                .Matches(@"^[a-zа-я]+$").WithMessage("Имя должно содержать только буквы");
+                .NotNull().WithMessage(string.Format(ValidationMessages.IsNullOrEmpty, nameof(Employee.Name)))
+                .Matches(@"^[a-zа-я]+$").WithMessage(string.Format(ValidationMessages.IsValidString, nameof(Employee.Name)));
 
             RuleFor(x => x.DateOfBirh)
-                .Must(BeValidBirthDay).WithMessage("Возраст сотрудника должен быть больше 18 лет");
+                .Must(BeValidBirthDay).WithMessage(string.Format(ValidationMessages.ValidAge));
             RuleFor(x => x.DateOfBirh)
-                .Must(BeValidCountBirthDay).WithMessage("Некорректная дата рождения");
+                .Must(BeValidCountBirthDay).WithMessage(string.Format(ValidationMessages.ValidDataBirth));
         }
 
         private bool BeValidBirthDay(DateTime birthDay)

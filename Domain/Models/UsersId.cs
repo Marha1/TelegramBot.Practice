@@ -29,7 +29,7 @@ namespace Domain.Models
             var validator = new UserIdValidation();
             return validator.Validate(this);
         }
-        [Required]
+
         public long ChatID { get; set; }
     }
 }

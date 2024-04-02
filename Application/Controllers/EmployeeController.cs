@@ -19,6 +19,8 @@ namespace Application.Controllers
         [HttpPost("Add")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+
         public IActionResult AddEmploy([FromBody] Employee request)
         {
             EmployeService.Add(request);
@@ -28,6 +30,7 @@ namespace Application.Controllers
         [HttpGet("Get")]
         [ProducesResponseType(typeof(IEnumerable<Employee>), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public IActionResult GetEmploy()
         {
             var responce = EmployeService.GetEmploye();
@@ -41,6 +44,8 @@ namespace Application.Controllers
         [HttpDelete("Delete")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+
         public IActionResult DeleteEmploy([FromBody] Employee request)
         {
             var deleted = EmployeService.Delete(request.Id);
@@ -54,6 +59,8 @@ namespace Application.Controllers
         [HttpPut("Update")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+
         public IActionResult Put([FromBody] Employee request)
         {
             if (!EmployeService.Update(request))
